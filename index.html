@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem Landing Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fraunces' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <div class="page-content">
+        <header>
+            <div class="logo">
+                <a href="/"><img src="Images/logo.png" alt="Ramadan Kareem"></a>
+            </div>
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Search</a></li>
+                <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </nav>
+        </header>
+        <div class="text">
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="text-body">
+                <p class="happy">Happy</p>
+                <p class="ramdan">Ramadan Mubarak</p>
+                <p class="text1">The Month of Holy Quran</p>
+                <p class="text2">Lorem Ipsum. Proin gravida nibh vel velit <br> auctor aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat ipsum,</p>
+                <span>Read More</span>
+            </div>
+        </div>
+    </div>
+    <div class="more-text">
+        <span><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+        </p>
+    </div>
+
+
+    <script>
+        let readBtn = document.querySelector(".page-content .text .text-body span");
+        let moreText = document.querySelector(".more-text");
+        let closeBtn = document.querySelector(".more-text span i");
+
+        readBtn.onclick = function () {
+            document.querySelector(".page-content").style.filter = "blur(8px)";
+            moreText.style.visibility = "visible";
+            moreText.style.opacity = "1";
+        }
+
+        closeBtn.onclick = function () {
+            document.querySelector(".page-content").style.filter = "none";
+            moreText.style.visibility = "hidden";
+            moreText.style.opacity = "0";
+        }
+    </script>
+</body>
+</html>
